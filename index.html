@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Huella de Carbono</title>
+    <meta name="description" content="Descubre cómo reducir tu huella de carbono con consejos prácticos y accesibles. Toma acción hoy mismo para proteger el planeta.">
+    <meta name="keywords" content="huella de carbono, sostenibilidad, energías renovables, consumo responsable, transporte sostenible">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#tips">Consejos</a></li>
+                <li><a href="#cta">Acción</a></li>
+            </ul>
+        </nav>
+        <h1>Huella de Carbono</h1>
+        <p>Reduce tu impacto ambiental de manera inteligente</p>
+    </header>
+
+    <div class="container">
+        <!-- Introducción -->
+        <section id="intro" class="intro">
+            <h2>¿Qué es la huella de carbono?</h2>
+            <p>
+                La huella de carbono representa la cantidad de gases de efecto invernadero emitidos por nuestras actividades diarias, desde el transporte hasta el consumo energético y la alimentación.
+            </p>
+        </section>
+
+        <!-- Consejos prácticos -->
+        <section id="tips" class="tips">
+            <div class="card" style="--i: 0;">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/023/488/614/small/renewable-energy-background-with-green-energy-as-wind-turbines-and-solar-panels-green-energy-concept-energy-sources-sustainable-ecology-elements-generative-ai-photo.jpg"
+                    alt="Energías renovables">
+                <div class="card-content">
+                    <h3><img src="https://cdn-icons-png.flaticon.com/512/2997/2997244.png" alt="Ícono de energía renovable" style="width:30px;height:30px; margin-right: 10px;">Usa energías renovables</h3>
+                    <p>Incorpora paneles solares o energías limpias para reducir tus emisiones de carbono.</p>
+                </div>
+            </div>
+            <div class="card" style="--i: 1;">
+                <img src="https://sostenibles.org/wp-content/uploads/2021/01/transporte-sostenible-300x200.jpg"
+                    alt="Transporte sostenible">
+                <div class="card-content">
+                    <h3><img src="https://cdn-icons-png.flaticon.com/512/12619/12619551.png" alt="Ícono de transporte sostenible" style="width:30px;height:30px; margin-right: 10px;">Transporte sostenible</h3>
+                    <p>Camina, usa bicicleta o transporte público para disminuir tu impacto ambiental.</p>
+                </div>
+            </div>
+            <div class="card" style="--i: 2;">
+                <img src="https://img.freepik.com/vector-gratis/diseno-plano-dibujado-mano-reducir-reutilizar-reciclar-letras_23-2149198760.jpg"
+                    alt="Consumo responsable">
+                <div class="card-content">
+                    <h3><img src="https://i.pinimg.com/originals/db/1d/57/db1d57e517b6624f4390d85d38f7b74c.png" alt="Ícono de reciclaje" style="width:30px;height:30px; margin-right: 10px;">Reduce, Reutiliza y Recicla</h3>
+                    <p>Minimiza el consumo y dale una segunda vida a los productos antes de desecharlos.</p>
+                </div>
+            </div>
+            <div class="card" style="--i: 3;">
+                <img src="https://gnd-content.dev/blog/wp-content/uploads/2022/02/Estilos-de-vida-saludable-la-importancia-para-nuestra-salud-1-300x200.jpeg"
+                    alt="Dieta sostenible">
+                <div class="card-content">
+                    <h3><img src="https://cdn-icons-png.flaticon.com/512/8508/8508958.png" alt="Ícono de dieta sostenible" style="width:30px;height:30px; margin-right: 10px;">Dieta sostenible</h3>
+                    <p>Consume productos locales, reduce el consumo de carne y opta por alimentos de temporada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section id="cta" class="cta">
+            <h2>¡Toma acción hoy mismo!</h2>
+            <p>Pequeños cambios en tu rutina diaria pueden marcar una gran diferencia para el planeta.</p>
+            <button onclick="alert('¡Gracias por tu compromiso con el planeta!')">Comprométete ahora</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Huella de Carbono. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('a[href^="#"]');
+            for (const link of links) {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.querySelector(link.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
